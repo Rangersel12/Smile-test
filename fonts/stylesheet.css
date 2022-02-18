@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Marvel';
+    src: url('Marvel-Regular.eot');
+    src: local('Marvel'), local('Marvel-Regular'),
+        url('Marvel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Marvel-Regular.woff2') format('woff2'),
+        url('Marvel-Regular.woff') format('woff'),
+        url('Marvel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('Marvel-Italic.eot');
+    src: local('Marvel Italic'), local('Marvel-Italic'),
+        url('Marvel-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Marvel-Italic.woff2') format('woff2'),
+        url('Marvel-Italic.woff') format('woff'),
+        url('Marvel-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('Marvel-BoldItalic.eot');
+    src: local('Marvel Bold Italic'), local('Marvel-BoldItalic'),
+        url('Marvel-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Marvel-BoldItalic.woff2') format('woff2'),
+        url('Marvel-BoldItalic.woff') format('woff'),
+        url('Marvel-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('Marvel-Bold.eot');
+    src: local('Marvel Bold'), local('Marvel-Bold'),
+        url('Marvel-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Marvel-Bold.woff2') format('woff2'),
+        url('Marvel-Bold.woff') format('woff'),
+        url('Marvel-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -1,0 +1,608 @@
+
+
+
+
+ @font-face {
+    font-family: 'Marvel';
+    src: url('Marvel-Regular.eot');
+    src: local('Marvel'), local('Marvel-Regular'),
+        url('../Fonts/Marvel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Marvel-Regular.woff2') format('woff2'),
+        url('../Fonts/Marvel-Regular.woff') format('woff'),
+        url('../Fonts/Marvel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('Marvel-Italic.eot');
+    src: local('Marvel Italic'), local('Marvel-Italic'),
+        url('../Fonts/Marvel-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Marvel-Italic.woff2') format('woff2'),
+        url('../Fonts/Marvel-Italic.woff') format('woff'),
+        url('../Fonts/Marvel-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('Marvel-BoldItalic.eot');
+    src: local('Marvel Bold Italic'), local('Marvel-BoldItalic'),
+        url('../Fonts/Marvel-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Marvel-BoldItalic.woff2') format('woff2'),
+        url('../Fonts/Marvel-BoldItalic.woff') format('woff'),
+        url('../Fonts/Marvel-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Marvel';
+    src: url('Marvel-Bold.eot');
+    src: local('Marvel Bold'), local('Marvel-Bold'),
+        url('../Fonts/Marvel-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/Marvel-Bold.woff2') format('woff2'),
+        url('../Fonts/Marvel-Bold.woff') format('woff'),
+        url('../Fonts/Marvel-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+	body{
+		font-family: "Marvel";
+	}
+
+
+
+
+	.title{
+		
+
+	font-size: 15px;
+	margin: 0px 0px 0px 20px;
+
+	}
+
+
+	a {
+	color:inherit;
+	text-decoration: none;
+	font-family: "Marvel";
+	font-size: 24px;
+
+	
+	}
+
+
+	a:link,
+	a.linl {
+	border-bottom: #e1e1e1 0.5px solid;
+
+	color: black;
+
+	}
+
+	a:visited,
+	a.visited {
+	color:#666666;
+	}
+
+	a:focus {
+		
+	}
+
+	a:hover,
+	a.hover {
+		border-bottom: none;	
+	background-color: #e1e1e1;
+	
+	}
+
+	a:active,
+	a.active {
+	border-bottom: none;
+	color: black;
+	}
+
+
+
+	ul li {
+		list-style: none;
+		line-height: 30px;
+	
+	}
+
+
+	/*///////////////////Сheckbox///////////////////////////*/
+
+
+
+	.checkbox1{
+		position: relative;
+		margin: 25px 0px 0px 10px ;
+	}
+
+	.checkbox2{
+		position: relative;
+		margin: 10px 0px 0px 10px ;
+	}
+
+
+
+	.checkbox3{
+		position: relative;
+		margin: 10px 0px 0px 10px ;
+	}
+
+
+
+	input[type="checkbox"]{
+		-webkit-appearance: none ;
+		appearance: none;
+		position: absolute;
+		
+	}
+
+
+
+	input[type="checkbox"] ~ label{
+
+		padding-left: 25px;
+		font-size: 1rem;
+		color:#444;
+		cursor: pointer;
+	}
+
+
+	input[type="checkbox"] ~ label::before{
+
+		content: ' ';
+		display: block;
+		width: 16px;
+		height: 16px;
+		background-color: #22f8b9;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		}
+
+
+	input[type="checkbox"] ~ label::after{
+
+		content: " ";
+		display: block;
+		width: 10px;
+		height: 10px;
+
+		background: url(/Img/free-icon-check-2107638.png) no-repeat ;
+		background-size: 10px 10px ;
+		
+	
+		opacity: 0;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		z-index: 2
+		}
+
+
+	input[type="checkbox"]:disabled ~ label::before{
+			background-color: #f0f0f0;
+		}
+		
+
+
+	input[type="checkbox"]:checked ~ label::after{
+			
+			opacity: 1;
+		}
+
+		
+
+
+/*////////////////////////////Radio////////////////////////////*/
+
+
+
+	.radio1 {
+		margin: 25px 0px 0px 10px;
+		position: relative;
+	}
+
+	.radio2 {
+		margin: 10px 0px 0px 10px ;
+		position: relative;
+	}
+
+
+	.radio3 {
+		margin: 10px 0px 0px 10px ;
+		position: relative;
+		}
+	
+
+
+
+	input[type="radio"]{
+
+		-webkit-appearance: none;
+		appearance: none;
+		position: absolute;
+	}
+
+
+
+	input[type="radio"]~label {
+
+		padding-left: 25px;
+		font-size: 1rem;
+		color: #444;
+		cursor: pointer;
+	}
+
+
+	input[type="radio"]~label::before{
+
+		content: ' ';
+		display: block;
+		width: 14px;
+		height: 14px;
+
+		border: 1px solid #22f8b9; 
+		background-color: #22f8b9;
+		border-radius: 50%;
+
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+	}
+
+	
+	
+
+	input[type="radio"]~label::after {
+
+		content: " ";
+		display: block;
+		width: 8px;
+		height: 8px;
+
+		background-color: blue ;
+		border-radius: 50%;
+		opacity: 0;
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		z-index: 2;
+		
+		 
+	}
+
+	
+
+
+	input[type="radio"]:checked ~label::after{
+		opacity: 1;
+	}
+
+	
+	input[type="radio"]:disabled ~ ::before{
+		border: 1px solid #f0f0f0;
+		background-color: #f0f0f0;
+	}
+
+	
+
+	
+
+
+	/*//////////Select/////////////////*/
+
+
+
+	.select{
+
+		
+		margin: 50px 0px 0px 35px ;
+	
+	}
+
+
+	.select select{
+		width: 60%;
+		display: block;
+		padding: 10px;
+	
+	
+
+		border-radius: 0px;
+		-webkit-appearance: none ;
+		appearance: none;
+		-moz-appearance: none;
+		
+		cursor: pointer;
+	}
+
+
+	
+
+
+	.select2{
+		width: 60%;
+		margin: 20px 0px 20px 0px ;
+		border-bottom: 1.5px solid #444;
+		cursor: pointer;
+	}
+
+
+	.select__plus{
+		position: relative;
+	}
+
+	.select__plus::before{
+
+		content: "";
+
+		position: absolute;
+		
+		
+		right: 39%;
+		
+		
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: url(/Img/Plus_icon-icons.com_71848.svg) no-repeat right;
+	}
+
+
+	
+	/*//////////Text input///////////*/
+
+	.textinput{
+
+
+		border: none;
+		border-radius: none;
+		width: 60%;
+		border-bottom: 1.5px solid;
+		padding: 10px 0px 6px 0px ;
+
+	}
+
+
+	.TextGrey{
+
+		margin: 10px 0px 0px 0px ;
+	}
+
+	
+	textarea:focus, input:focus
+	{
+	outline: none;
+	}
+	
+
+
+	.textBlack{
+		margin: 10px 0px 0px 0px ;
+	}
+
+	/*///////////////Button///////////////*/
+
+
+	.button__block{
+	
+	
+		margin: 20px 0px 0px 0px ;
+	}
+
+	.button__blue{
+		display: inline-block;
+		padding-right: 5px ;
+	}
+
+
+	.button__white{
+		display: inline-block;
+	}
+
+
+	.button{
+		width: 120px;
+		height: 50px;
+		border-color: #0000ff;
+		background-color: white;
+		color: #0000ff;
+		border-radius: 1px;
+		text-transform: uppercase;
+	}
+
+
+	.button:hover{
+
+		background-color: #0000ff;
+		color:white;
+	}
+
+
+	.button2{
+		display: inline;
+		width: 120px;
+		height: 50px;
+		border-color: #0000ff;
+		background-color: #0000ff;
+		color: white;
+		border-radius: 1px;
+		text-transform: uppercase;
+	}
+
+
+	.button2:hover{
+		
+		background-color: white;
+		color:#0000ff;
+	}
+
+
+	/*///////////////Position//////////////*/
+
+	.content{
+		
+	}
+
+	.wrapper{
+	
+	
+		width: 100%;
+	
+		
+		
+	}
+
+	.left__colum{
+		
+	
+		vertical-align: top;
+		
+		display: inline-block;
+		width: 500px;
+		height: 300px;
+	}
+
+
+
+	.right__colum{
+		
+		width: 500px;
+		height: 300px;
+		
+		
+		display: inline-block;
+		}
+
+	.input__menu{
+	
+		padding: 80px 0px 0px 0px ;
+		
+	
+	}
+ 
+	.checkbox__menu{
+		
+	}
+
+
+	.checkOne{
+		display: inline-block;
+		
+	}
+
+
+	.checkTwo{
+		display: inline-block;
+		
+	}
+
+
+	
+
+
+
+
+	/*//////////////Mobile/////////////*/
+
+	@media screen and (max-width:600px) {
+
+		.title{
+			font-size: 20px;
+			
+			margin: 0px 0px 0px 0px ;
+		}
+		.wrapper { 
+	 }
+
+		.left__colum{width: 100%;   }
+
+		ul{
+			padding: 0px;
+		}
+
+		.right__colum{width: 100%;  }
+		
+		.select{
+			margin: 0px 0px 0px 0px; 
+		}
+ 
+		.select select{
+			
+			width: 100%;
+		}	
+
+		.select__wrapper::before{
+
+		
+			right: 1%;
+		 }
+	
+
+		.select2{
+			
+			width: 100%;
+		}
+
+		.select__plus::before{
+			
+			right: 1%;
+			
+		}
+	
+
+		.checkbox__menu{
+		
+			order:3;
+		}
+
+		.input__menu{
+			
+			padding: 0px;
+			width: 100%;
+		}
+
+		.textinput{
+			width: 100%;
+		}
+
+		.button__block{
+		order: 4;
+		}
+
+		.button__blue{
+			
+			display: block;
+
+		}
+		.button__white{
+			margin-top: 5px;
+			display: block;
+		}
+
+		.button{
+			display: block;
+			width: 100%;
+		}
+		.button2{
+			width: 100%;
+		}
+	}
+	
